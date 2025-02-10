@@ -2,8 +2,8 @@ services:
   postgres:
     image: postgres
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-valsuh}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mountain}
+      POSTGRES_USER: ${POSTGRES_USER:-mountain}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mountain-password}
       POSTGRES_DB: ${POSTGRES_DB:-mountain}
     volumes:
       - db:/var/lib/postgresql/data
